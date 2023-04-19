@@ -1,0 +1,24 @@
+{
+  "name": "slupro-sign-up",
+  "version": "1.0.0",
+  "description": "",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./index.html ./src/html/signin.html ",
+    "build": "parcel build ./index.html ./src/html/signin.html --dist-dir docs --public-url ./",
+    "clean": "del-cli ./.parcel-cache ./docs ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^5.0.0",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "firebase": "^9.19.1",
+    "typescript": "^5.0.3"
+  }
+}
