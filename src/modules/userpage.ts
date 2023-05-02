@@ -26,7 +26,7 @@ deleteUserBtn.addEventListener("click", () => {
       .then((response) => {
         console.log(response.status);
         localStorage.clear();
-        window.location.assign("./src/index.html"); // reload the page to clear data and redirect to login page
+        window.location.assign("../index.html"); // reload the page to clear data and redirect to login page
       })
       .catch((error) => {
         console.log(`Error deleting user account: ${error}`);
