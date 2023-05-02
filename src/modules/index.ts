@@ -1,3 +1,4 @@
+
 export const url: string = `https://login-2c7ee-default-rtdb.europe-west1.firebasedatabase.app/`;
 const baseurl: string = `${url}users.json`;
 console.log(baseurl);
@@ -141,7 +142,9 @@ function verifyProcess(data: { [key: string]: { username: string, password: stri
   for (let i = 0; i < listFromData.length; i++) {
       if (userNameInput === listFromData[i].username && passwordInput === listFromData[i].password) {
         localStorage.setItem('loggedInUser', JSON.stringify(listFromData[i]));
-          window.location.assign('../html/signin.html');
+          // const signinUrl = new URL('../html/signin.html', import.meta.url);
+          
+          location.assign('../html/signin.html');
           console.log(listFromData[i].id,'Welcome');
           return;
       }
