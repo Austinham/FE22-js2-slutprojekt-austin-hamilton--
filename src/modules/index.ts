@@ -141,7 +141,7 @@ function verifyProcess(data: { [key: string]: { username: string, password: stri
   for (let i = 0; i < listFromData.length; i++) {
       if (userNameInput === listFromData[i].username && passwordInput === listFromData[i].password) {
         localStorage.setItem('loggedInUser', JSON.stringify(listFromData[i]));
-          window.location.assign('html/signin.html');
+          window.location.assign('./signin.html');
           console.log(listFromData[i].id,'Welcome');
           return;
       }
