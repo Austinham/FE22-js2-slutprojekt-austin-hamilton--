@@ -18,6 +18,7 @@ const post = document.querySelector("#post") as HTMLDivElement;
 postButton.addEventListener("click", updatePost); // add event listener to call updatePost() function
 
 deleteUserBtn.addEventListener("click", () => {
+  
   if (newUrl) {
     const init = {
       method: "DELETE",
